@@ -15,13 +15,14 @@ The configuration of the Fax client happens in the `aufax.json` file.
 The file needs the following keys:
 
 | Key Name | Example Value | Type | Description |
-| pbx*address | 192.168.0.240 | \_string* | IP Address or hostname of the PBX system |
-| pbx*username | 208 | \_string* | Username, usually the internal phone number of the owner of the fax box |
-| pbx*password | secret | _string* | Password for the corresponding username. Minimum 8 characters or a 6 digit PIN on the COMpact 3000. |
-| access*number | 0 | _string* | Phone number prefix needed to get an outside line, usually 0. |
-| prepend*access_numer | false | _boolean* | Whether to prepend the above suffix to the number dialed. Only set to `true` if automatic trunk access has been disabled. |
-| use*ssl | false | _boolean* | Use SSL to communicate with the PBX system |
-| verify*ssl | false | _boolean* | Whether to verify the SSL connection to the PBX system or not. Recommended to be false as the PBX uses a self-signed certificate |
+| -------- | ------------- | ---- | ----------- |
+| pbx_address | 192.168.0.240 | _string_ | IP Address or hostname of the PBX system |
+| pbx_username | 208 | _string_ | Username, usually the internal phone number of the owner of the fax box |
+| pbx_password | secret | _string_ | Password for the corresponding username. Minimum 8 characters or a 6 digit PIN on the COMpact 3000. |
+| access_number | 0 | _string_ | Phone number prefix needed to get an outside line, usually 0. |
+| prepend_access_numer | false | _boolean* | Whether to prepend the above suffix to the number dialed. Only set to `true` if automatic trunk access has been disabled. |
+| use_ssl | false | _boolean_ | Use SSL to communicate with the PBX system |
+| verify_ssl | false | _boolean_ | Whether to verify the SSL connection to the PBX system or not. Recommended to be false as the PBX uses a self-signed certificate |
 
 ## PBX configuration
 
