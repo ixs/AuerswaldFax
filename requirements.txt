@@ -1,0 +1,5 @@
+pdf2image
+requests
+requests_toolbelt
+babel
+pillow
